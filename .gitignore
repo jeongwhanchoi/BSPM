@@ -14,5 +14,4 @@ runs/
 # others
 *.sh
 *.npy
-*.png
 *.pdf
