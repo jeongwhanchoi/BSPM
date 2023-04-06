@@ -1,5 +1,8 @@
 # Blurring-Sharpening Process Models for Collaborative Filtering
 
+- Please see our paper for more details: [Blurring-Sharpening Process Models for Collaborative Filtering](https://arxiv.org/abs/2211.09324) (we will update *SIGIR* version soon).
+- We have more interesting works on recommender systems, please check our [LT-OCF](https://dl.acm.org/doi/abs/10.1145/3459637.3482449) ([code](https://github.com/jeongwhanchoi/LT-OCF)) and [HMLET](https://dl.acm.org/doi/abs/10.1145/3488560.3498501) ([code](https://github.com/jeongwhanchoi/HMLET)).
+
 
 Score-based generative models (SGMs) |  Our blurring-sharpening process models (BSPMs)
 :-------------------------:|:-------------------------:
@@ -8,6 +11,22 @@ Score-based generative models (SGMs) |  Our blurring-sharpening process models (
 > The comparison between SGMs and our proposed BSPMs. SGMs, a recently proposed paradigm for deep generative tasks, outperform generative adversarial networks (GANs), variational autoencoders (VAEs), and many other generative models. 
 > - SGMs use two stochastic processes, one for the forward perturbation and the other for the backward recovery. Since the recovery process is stochastic, it does not typically converge to the original sample $\mathbf{x}(0)$ but to another similar sample. After training, only the recovery process is used to generate fake samples from random noisy vectors $\mathbf{x}(T) \sim \mathcal{N}(\mathbf{\mu}, \mathbf{\sigma})$
 > - Our BSPMs use two deterministic blurring and sharpening processes. Unlike SGMs trained with many images, our BSPMs process only one interaction matrix; therefore, we use deterministic processes..
+
+---
+
+## Citation
+
+Please cite our paper if using this code.
+
+```
+@inproceedings{choi2023bspm,
+  title={Blurring-Sharpening Process Models for Collaborative Filtering},
+  author={Choi, Jeongwhan and Hong, Seoyoung and Park, Noseong and Cho, Sung-Bae},
+  booktitle={Proceedings of the ACM Conference on Research and Development in Information Retrieval (SIGIR)},
+  year={2023},
+  organization={ACM}
+}
+```
 
 ---
 
