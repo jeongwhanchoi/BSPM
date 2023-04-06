@@ -1,0 +1,18 @@
+# default
+__pycache__
+*/__pycache__
+.DS_Store
+.vscode
+
+# logs
+*.log
+runs/
+
+# checkpoints
+*/checkpoints
+
+# others
+*.sh
+*.npy
+*.png
+*.pdf
