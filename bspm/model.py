@@ -482,7 +482,7 @@ class BSPM_TORCH(object):
             if(ds_name != 'amazon-book'):
                 idl_out = torch.mm(batch_test, self.left_mat @  self.right_mat)
 
-            if(ds_name != ['amazon-book']):
+            if(ds_name != 'amazon-book'):
                 blurred_out = torch.mm(batch_test, self.linear_Filter)
             else:
                 blurred_out = torch.mm(batch_test.to_dense(), self.linear_Filter)
