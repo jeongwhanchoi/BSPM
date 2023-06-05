@@ -31,8 +31,7 @@ Please cite our paper if using this code.
   title={Blurring-Sharpening Process Models for Collaborative Filtering},
   author={Choi, Jeongwhan and Hong, Seoyoung and Park, Noseong and Cho, Sung-Bae},
   booktitle={Proceedings of the ACM Conference on Research and Development in Information Retrieval (SIGIR)},
-  year={2023},
-  organization={ACM}
+  year={2023}
 }
 ```
 
@@ -76,3 +75,20 @@ python main.py --dataset="amazon-book" --topks="[20]" --simple_model="bspm" --so
 python main.py --dataset="amazon-book" --topks="[20]" --simple_model="bspm-torch" --testbatch=2048 --solver_shr="rk4" --K_s=2 --T_s=2.2 --final_sharpening=False 
 ```
 
+## Arguements
+- `final_sharpening`
+    - True: EM (Early Merge)
+    - False: LM (Late Merge)
+- `solver_shr`
+    - `euler`: Euler method
+    - `rk4`: Runge-Kutta 4th order method
+- `K_s`:
+    - The number of sharpening step
+- `T_s`:
+    - The terminal time of sharpening ODE
+- `t_point_combination`:
+    - True: Use the combination of t points
+- `idl_beta`:
+    - The beta value of IDL
+- `factor_dim`:
+    - The dimension of latent factors
