@@ -92,3 +92,9 @@ python main.py --dataset="amazon-book" --topks="[20]" --simple_model="bspm-torch
     - The beta value of IDL
 - `factor_dim`:
     - The dimension of latent factors
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=jeongwhanchoi/BSPM&type=Date)](https://star-history.com/#jeongwhanchoi/BSPM&Date)
