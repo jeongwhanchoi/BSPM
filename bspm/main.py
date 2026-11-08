@@ -22,7 +22,7 @@ weight_file = utils.getFileName()
 print(f"load and save to {weight_file}")
 if world.LOAD:
     try:
-        Recmodel.load_state_dict(torch.load(weight_file,map_location=torch.device('cpu')))
+        Recmodel.load_state_dict(torch.load(weight_file,map_location=torch.device('cpu'), weights_only=True))
         world.cprint(f"loaded model weights from {weight_file}")
     except FileNotFoundError:
         print(f"{weight_file} not exists, start from beginning")
